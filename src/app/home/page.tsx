@@ -14,7 +14,9 @@ import { Sidebar } from "../components/Sidebar";
 export default function Login() {
   return (
     <div className="bg-primary-bg">
-      <Header />
+      <div className="">
+        <Header />
+      </div>
       <Sidebar />
     </div>
   );

@@ -4,10 +4,7 @@ export function Header() {
   return (
     <nav className=" bg-primary-bgHeader">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a
-          href="https://flowbite.com/"
-          className="flex items-center space-x-3 rtl:space-x-reverse"
-        >
+        <a href="" className="flex items-center space-x-3 rtl:space-x-reverse">
           {/* <img
             src="https://flowbite.com/docs/images/logo.svg"
             className="h-8"
@@ -25,7 +22,7 @@ export function Header() {
           aria-controls="navbar-default"
           aria-expanded="false"
         >
-          <span className="sr-only">Open main menu</span>
+          {/* <span className="sr-only">Open main menu</span> */}
           <svg
             className="w-5 h-5"
             aria-hidden="true"

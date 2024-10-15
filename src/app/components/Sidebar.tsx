@@ -14,8 +14,8 @@ export function Sidebar() {
     //   <Link href={""}>Caixa</Link>
     //   <Link href={""}>Configurações</Link>
     // </aside>
-    <div>
-      <button
+    <div className="top-0 left-0 z-40 w-64 transition-transform -translate-x-full sm:translate-x-0 h-screen shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
+      {/* <button
         data-drawer-target="sidebar-multi-level-sidebar"
         data-drawer-toggle="sidebar-multi-level-sidebar"
         aria-controls="sidebar-multi-level-sidebar"
@@ -36,21 +36,25 @@ export function Sidebar() {
             d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
           ></path>
         </svg>
-      </button>
+      </button> */}
       <aside
         id="sidebar-multi-level-sidebar"
-        className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+        className=" top-0 left-0 z-40 w-64 transition-transform -translate-x-full sm:translate-x-0 h-screen"
         aria-label="Sidebar"
       >
-        <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+        {/*no ClassName do elemento acima, estava com a class fixed no inicio, para deixar o side bar fixo*/}
+        <div className="px-3 py-4 overflow-y-auto  bg-white min-h-full">
+          {/*h-full div acima */}
           <ul className="space-y-2 font-medium">
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                className="flex items-center p-2 dark:text-primary-menu  rounded-lg bg-white text-primary-menu  hover:bg-primary-menuSelecionado hover:text-white group font-bold"
               >
                 <img src="./Home.svg" />
-                <span className="ms-3 text-primary-menu font-bold">Início</span>
+                {/* <span className="ms-3 text-primary-menu hover:text-white font-bold"> */}
+                Início
+                {/* </span> */}
               </a>
             </li>
             {/* <li>
