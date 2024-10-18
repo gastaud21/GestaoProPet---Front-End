@@ -12,8 +12,7 @@ type Inputs = {
 
 export default function Login() {
   return (
-    <div className="bg-primary-bg">
-      <h1 className="text-primary-black">hads</h1>v
+    <div className="bg-primary-bg">   
       <CardLogin />
     </div>
   );
