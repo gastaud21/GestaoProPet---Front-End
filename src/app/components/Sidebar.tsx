@@ -110,7 +110,7 @@ export function Sidebar() {
             </li>
             <li>
               <a
-                href="#"
+                href="/Suprimentos"
                 className="flex items-center p-2 text-white rounded-lg dark:text-white  hover:bg-primary-menuSelecionado dark:hover:bg-primary-menuSelecionado group"
               >
                 <svg
@@ -247,7 +247,7 @@ export function Sidebar() {
             </li>
             <li>
               <a
-                href="Caixa"
+                href="/Caixa"
                 className="flex items-center p-2 text-white rounded-lg dark:text-white  hover:bg-primary-menuSelecionado dark:hover:bg-primary-menuSelecionado group"
               >
                 <svg
