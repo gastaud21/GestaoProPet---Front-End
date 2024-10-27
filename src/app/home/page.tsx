@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
 import { Header } from "../components/Header";
 import { Sidebar } from "../components/Sidebar";
+import { Main } from "../components/Main";
 // import { useClienteStore } from "@/context/cliente";
 
 // type Inputs = {
@@ -11,13 +12,16 @@ import { Sidebar } from "../components/Sidebar";
 //   manter: boolean;
 // };
 
-export default function Login() {
+export default function Home() {
   return (
     <div className="bg-primary-bg">
       <div className="">
         <Header />
       </div>
-      <Sidebar />
+      <div className="flex">
+        <Sidebar />
+        <Main />
+      </div>
     </div>
   );
 }
