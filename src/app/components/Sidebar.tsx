@@ -48,7 +48,7 @@ export function Sidebar() {
           <ul className="space-y-2 font-medium">
             <li>
               <a
-                href="#"
+                href="/Home"
                 className="flex items-center p-2 text-white rounded-lg dark:text-white  hover:bg-primary-menuSelecionado dark:hover:bg-primary-menuSelecionado group"
               >
                 <svg
@@ -71,7 +71,7 @@ export function Sidebar() {
             </li>
             <li>
               <a
-                href="#"
+                href="/Animais"
                 className="flex items-center p-2 text-white rounded-lg dark:text-white  hover:bg-primary-menuSelecionado dark:hover:bg-primary-menuSelecionado group"
               >
                 <svg
@@ -247,7 +247,7 @@ export function Sidebar() {
             </li>
             <li>
               <a
-                href="#"
+                href="Caixa"
                 className="flex items-center p-2 text-white rounded-lg dark:text-white  hover:bg-primary-menuSelecionado dark:hover:bg-primary-menuSelecionado group"
               >
                 <svg
