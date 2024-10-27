@@ -3,7 +3,7 @@
 export function Header() {
   return (
     <nav className=" bg-primary-bgHeader">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="flex  items-center justify-between  py-4 px-44 w-screen-[-webkit-fill-available]">
         <a href="" className="flex items-center space-x-3 rtl:space-x-reverse">
           {/* <img
             src="https://flowbite.com/docs/images/logo.svg"
@@ -11,7 +11,7 @@ export function Header() {
             alt="Flowbite Logo"
           /> */}
           <img src="./Logo.svg" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
             GestãoProPet
           </span>
         </a>
@@ -40,8 +40,8 @@ export function Header() {
           </svg>
         </button>
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
-            <li>
+          <ul className="font-medium flex gap-7 flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
+            {/* <li>
               <a
                 href="#"
                 className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
@@ -49,19 +49,19 @@ export function Header() {
               >
                 Home
               </a>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <a
                 href="#"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 About
               </a>
-            </li>
+            </li> */}
             <li>
               <button
                 type="button"
-                className="flex gap-1 text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-white dark:hover:border-primary-menuSelecionado dark:text-white dark:hover:text-white dark:hover:bg-primary-menuSelecionado dark:focus:ring-primary-menuSelecionado"
+                className="flex gap-1 text-white border focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 border-white hover:border-primary-menuSelecionado hover:text-white hover:bg-primary-menuSelecionado focus:ring-primary-menuSelecionado"
               >
                 <svg
                   width="20"
@@ -70,7 +70,7 @@ export function Header() {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g clip-path="url(#clip0_21_869)">
+                  <g clipPath="url(#clip0_21_869)">
                     <mask
                       id="mask0_21_869"
                       maskUnits="userSpaceOnUse"
@@ -95,6 +95,31 @@ export function Header() {
                   </defs>
                 </svg>
                 <span>Informações</span>
+              </button>
+            </li>
+            <li className="flex items-center">
+              <button className="flex gap-2 text-white items-end">
+                <span>Renato</span>
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M21.3334 12C21.3334 14.9455 18.9455 17.3333 16 17.3333C13.0545 17.3333 10.6667 14.9455 10.6667 12C10.6667 9.05447 13.0545 6.66666 16 6.66666C18.9455 6.66666 21.3334 9.05447 21.3334 12ZM18.6667 12C18.6667 13.4728 17.4728 14.6667 16 14.6667C14.5272 14.6667 13.3334 13.4728 13.3334 12C13.3334 10.5272 14.5272 9.33332 16 9.33332C17.4728 9.33332 18.6667 10.5272 18.6667 12Z"
+                    fill="white"
+                  />
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M16 1.33334C7.89981 1.33334 1.33331 7.89984 1.33331 16C1.33331 24.1001 7.89981 30.6667 16 30.6667C24.1001 30.6667 30.6666 24.1001 30.6666 16C30.6666 7.89984 24.1001 1.33334 16 1.33334ZM3.99998 16C3.99998 18.7869 4.95005 21.352 6.54395 23.3889C8.73658 20.5185 12.195 18.6667 16.086 18.6667C19.9264 18.6667 23.3456 20.4708 25.542 23.2777C27.084 21.2591 28 18.7365 28 16C28 9.3726 22.6274 4.00001 16 4.00001C9.37257 4.00001 3.99998 9.3726 3.99998 16ZM16 28C13.133 28 10.5008 26.9945 8.43687 25.3171C10.1247 22.9083 12.9214 21.3333 16.086 21.3333C19.2112 21.3333 21.9777 22.8695 23.6717 25.2279C21.5918 26.9588 18.9174 28 16 28Z"
+                    fill="white"
+                  />
+                </svg>
               </button>
             </li>
           </ul>

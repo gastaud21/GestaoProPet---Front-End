@@ -32,6 +32,9 @@ const config: Config = {
           },
         },
       },
+      // display: {
+      //   flexbaixo: "align-itens",
+      // },
     },
   },
   plugins: [],

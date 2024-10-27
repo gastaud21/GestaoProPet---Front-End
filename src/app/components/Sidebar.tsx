@@ -14,7 +14,7 @@ export function Sidebar() {
     //   <Link href={""}>Caixa</Link>
     //   <Link href={""}>Configurações</Link>
     // </aside>
-    <div className="top-0 left-0 z-40 w-64 transition-transform -translate-x-full sm:translate-x-0 h-screen shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
+    <div className="top-0 left-0 z-40 w-64 transition-transform -translate-x-full sm:translate-x-0 h-[calc(100vh-106px)] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
       {/* <button
         data-drawer-target="sidebar-multi-level-sidebar"
         data-drawer-toggle="sidebar-multi-level-sidebar"
@@ -39,7 +39,7 @@ export function Sidebar() {
       </button> */}
       <aside
         id="sidebar-multi-level-sidebar"
-        className=" top-0 left-0 z-40 w-64 transition-transform -translate-x-full sm:translate-x-0 h-screen"
+        className=" top-0 left-0 z-40 w-64 transition-transform -translate-x-full sm:translate-x-0 h-[calc(100vh-106px)]"
         aria-label="Sidebar"
       >
         {/*no ClassName do elemento acima, estava com a class fixed no inicio, para deixar o side bar fixo*/}
@@ -103,7 +103,6 @@ export function Sidebar() {
                     fill="currentColor"
                   />
                 </svg>
-
                 <span className="flex-1 ms-3 whitespace-nowrap text-primary-menu font-bold group-hover:text-white">
                   Animais
                 </span>
@@ -150,7 +149,6 @@ export function Sidebar() {
                     strokeLinejoin="round"
                   />
                 </svg>
-
                 <span className="flex-1 ms-3 whitespace-nowrap text-primary-menu font-bold group-hover:text-white">
                   Suprimentos
                 </span>
@@ -159,7 +157,7 @@ export function Sidebar() {
             <li>
               <button
                 type="button"
-                className="flex items-center w-full p-2 text-base text-white transition duration-75 rounded-lg group hover:bg-primary-menuSelecionado dark:text-white dark:hover:bg-primary-menuSelecionado group"
+                className="flex items-center w-full p-2 text-base text-white transition duration-75 rounded-lg group hover:bg-primary-menuSelecionado group"
                 aria-controls="dropdown-example"
                 data-collapse-toggle="dropdown-example"
               >
@@ -209,7 +207,6 @@ export function Sidebar() {
                     strokeLinejoin="round"
                   />
                 </svg>
-
                 <span className="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap text-primary-menu font-bold group-hover:text-white">
                   Pessoas
                 </span>
@@ -233,7 +230,7 @@ export function Sidebar() {
                 <li>
                   <a
                     href="#"
-                    className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:text-white dark:text-primary-menu dark:hover:bg-primary-menuSelecionado"
+                    className="flex items-center w-full p-2 text-primary-menu transition duration-75 rounded-lg pl-11 group hover:text-white hover:bg-primary-menuSelecionado"
                   >
                     Funcionários
                   </a>
@@ -241,7 +238,7 @@ export function Sidebar() {
                 <li>
                   <a
                     href="#"
-                    className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:text-white dark:text-primary-menu dark:hover:bg-primary-menuSelecionado"
+                    className="flex items-center w-full p-2 text-primary-menu transition duration-75 rounded-lg pl-11 group hover:text-white  hover:bg-primary-menuSelecionado"
                   >
                     Interessados
                   </a>
@@ -279,7 +276,7 @@ export function Sidebar() {
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-white rounded-lg dark:text-white  hover:bg-primary-menuSelecionado dark:hover:bg-primary-menuSelecionado group"
+                className="flex items-center p-2 text-white rounded-lg hover:bg-primary-menuSelecionado group"
               >
                 <svg
                   width="24"
