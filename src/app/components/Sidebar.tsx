@@ -14,7 +14,7 @@ export function Sidebar() {
     //   <Link href={""}>Caixa</Link>
     //   <Link href={""}>Configurações</Link>
     // </aside>
-    <div className="top-0 left-0 z-40 w-64 transition-transform -translate-x-full sm:translate-x-0 h-screen shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
+    <div className="top-0 left-0 z-40 w-64 transition-transform -translate-x-full sm:translate-x-0 h-[calc(100vh-106px)] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
       {/* <button
         data-drawer-target="sidebar-multi-level-sidebar"
         data-drawer-toggle="sidebar-multi-level-sidebar"
@@ -39,7 +39,7 @@ export function Sidebar() {
       </button> */}
       <aside
         id="sidebar-multi-level-sidebar"
-        className=" top-0 left-0 z-40 w-64 transition-transform -translate-x-full sm:translate-x-0 h-screen"
+        className=" top-0 left-0 z-40 w-64 transition-transform -translate-x-full sm:translate-x-0 h-[calc(100vh-106px)]"
         aria-label="Sidebar"
       >
         {/*no ClassName do elemento acima, estava com a class fixed no inicio, para deixar o side bar fixo*/}
@@ -51,7 +51,6 @@ export function Sidebar() {
                 href="#"
                 className="flex items-center p-2 text-white rounded-lg dark:text-white  hover:bg-primary-menuSelecionado dark:hover:bg-primary-menuSelecionado group"
               >
-                {/* <img src="./Home.svg" /> */}
                 <svg
                   width="24"
                   height="24"
@@ -104,7 +103,6 @@ export function Sidebar() {
                     fill="currentColor"
                   />
                 </svg>
-
                 <span className="flex-1 ms-3 whitespace-nowrap text-primary-menu font-bold group-hover:text-white">
                   Animais
                 </span>
@@ -126,32 +124,31 @@ export function Sidebar() {
                   <path
                     d="M11.0287 2.53961C11.6327 2.20402 12.3672 2.20402 12.9713 2.5396L20.4856 6.71425C20.8031 6.89062 21 7.22524 21 7.5884V15.8232C21 16.5495 20.6062 17.2188 19.9713 17.5715L12.9713 21.4604C12.3672 21.796 11.6327 21.796 11.0287 21.4604L4.02871 17.5715C3.39378 17.2188 3 16.5495 3 15.8232V7.5884C3 7.22524 3.19689 6.89062 3.51436 6.71425L11.0287 2.53961Z"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M7.5 4.5L16.5 9.5V13"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M6 12.3281L9 14"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M3 7L12 12M12 12L21 7M12 12V21.5"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinejoin="round"
                   />
                 </svg>
-
                 <span className="flex-1 ms-3 whitespace-nowrap text-primary-menu font-bold group-hover:text-white">
                   Suprimentos
                 </span>
@@ -160,7 +157,7 @@ export function Sidebar() {
             <li>
               <button
                 type="button"
-                className="flex items-center w-full p-2 text-base text-white transition duration-75 rounded-lg group hover:bg-primary-menuSelecionado dark:text-white dark:hover:bg-primary-menuSelecionado group"
+                className="flex items-center w-full p-2 text-base text-white transition duration-75 rounded-lg group hover:bg-primary-menuSelecionado group"
                 aria-controls="dropdown-example"
                 data-collapse-toggle="dropdown-example"
               >
@@ -176,41 +173,40 @@ export function Sidebar() {
                   <path
                     d="M16.7194 19.7519L16.0789 14.6279C15.8912 13.1266 14.615 12 13.1021 12H12.0004H10.8987C9.38573 12 8.10952 13.1266 7.92186 14.6279L7.28136 19.7519C7.13215 20.9456 8.06292 22 9.26591 22H12.0004H14.7348C15.9378 22 16.8686 20.9456 16.7194 19.7519Z"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8Z"
                     stroke="currentColor"
-                    stroke-width="2"
+                    strokeWidth="2"
                   />
                   <path
                     d="M4 11C5.10457 11 6 10.1046 6 9C6 7.89543 5.10457 7 4 7C2.89543 7 2 7.89543 2 9C2 10.1046 2.89543 11 4 11Z"
                     stroke="currentColor"
-                    stroke-width="2"
+                    strokeWidth="2"
                   />
                   <path
                     d="M20 11C21.1046 11 22 10.1046 22 9C22 7.89543 21.1046 7 20 7C18.8954 7 18 7.89543 18 9C18 10.1046 18.8954 11 20 11Z"
                     stroke="currentColor"
-                    stroke-width="2"
+                    strokeWidth="2"
                   />
                   <path
                     d="M3.99993 14H3.69418C2.71651 14 1.88213 14.7068 1.7214 15.6712L1.38806 17.6712C1.18489 18.8903 2.12497 20 3.36085 20H6.99993"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M20 14H20.3057C21.2834 14 22.1178 14.7068 22.2785 15.6712L22.6119 17.6712C22.815 18.8903 21.8751 20 20.6392 20C19.4775 20 18.0952 20 17 20"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
-
                 <span className="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap text-primary-menu font-bold group-hover:text-white">
                   Pessoas
                 </span>
@@ -223,9 +219,9 @@ export function Sidebar() {
                 >
                   <path
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="m1 1 4 4 4-4"
                   />
                 </svg>
@@ -234,7 +230,7 @@ export function Sidebar() {
                 <li>
                   <a
                     href="#"
-                    className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:text-white dark:text-primary-menu dark:hover:bg-primary-menuSelecionado"
+                    className="flex items-center w-full p-2 text-primary-menu transition duration-75 rounded-lg pl-11 group hover:text-white hover:bg-primary-menuSelecionado"
                   >
                     Funcionários
                   </a>
@@ -242,7 +238,7 @@ export function Sidebar() {
                 <li>
                   <a
                     href="#"
-                    className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:text-white dark:text-primary-menu dark:hover:bg-primary-menuSelecionado"
+                    className="flex items-center w-full p-2 text-primary-menu transition duration-75 rounded-lg pl-11 group hover:text-white  hover:bg-primary-menuSelecionado"
                   >
                     Interessados
                   </a>
@@ -280,7 +276,7 @@ export function Sidebar() {
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-white rounded-lg dark:text-white  hover:bg-primary-menuSelecionado dark:hover:bg-primary-menuSelecionado group"
+                className="flex items-center p-2 text-white rounded-lg hover:bg-primary-menuSelecionado group"
               >
                 <svg
                   width="24"
@@ -293,12 +289,12 @@ export function Sidebar() {
                   <path
                     d="M14 3.2686C14 2.56797 13.432 2 12.7314 2H11.2686C10.568 2 10 2.56797 10 3.2686C10 3.84745 9.60365 4.34302 9.0652 4.55546C8.97998 4.58908 8.89547 4.62413 8.81172 4.66056C8.2807 4.89156 7.64975 4.82144 7.24027 4.41197C6.74474 3.91643 5.94132 3.91643 5.44579 4.41197L4.41187 5.44588C3.91632 5.94143 3.91632 6.74487 4.41187 7.24042C4.82135 7.6499 4.89147 8.28086 4.66049 8.81189C4.62408 8.89559 4.58906 8.98004 4.55546 9.0652C4.34302 9.60365 3.84744 10 3.2686 10C2.56797 10 2 10.568 2 11.2686V12.7314C2 13.432 2.56797 14 3.2686 14C3.84744 14 4.34302 14.3963 4.55546 14.9348C4.58906 15.02 4.62408 15.1044 4.66049 15.1881C4.89148 15.7191 4.82135 16.3501 4.41187 16.7596C3.91632 17.2551 3.91632 18.0586 4.41187 18.5541L5.44578 19.588C5.94132 20.0836 6.74474 20.0836 7.24028 19.588C7.64975 19.1786 8.28071 19.1084 8.81173 19.3394C8.89548 19.3759 8.97998 19.4109 9.0652 19.4445C9.60365 19.657 10 20.1526 10 20.7314C10 21.432 10.568 22 11.2686 22H12.7314C13.432 22 14 21.432 14 20.7314C14 20.1526 14.3963 19.657 14.9348 19.4445C15.02 19.4109 15.1045 19.3759 15.1882 19.3395C15.7192 19.1085 16.3501 19.1786 16.7595 19.5881C17.255 20.0836 18.0584 20.0836 18.5539 19.5881L19.588 18.554C20.0835 18.0585 20.0835 17.2552 19.588 16.7597C19.1785 16.3502 19.1084 15.7193 19.3394 15.1883C19.3759 15.1046 19.4109 15.02 19.4445 14.9348C19.657 14.3964 20.1526 14 20.7314 14C21.432 14 22 13.432 22 12.7314V11.2686C22 10.568 21.432 10 20.7314 10C20.1526 10 19.657 9.60365 19.4445 9.0652C19.4109 8.97996 19.3759 8.89544 19.3394 8.81166C19.1084 8.28068 19.1785 7.64977 19.588 7.24033C20.0835 6.74483 20.0835 5.94147 19.588 5.44597L18.5539 4.41193C18.0584 3.91642 17.255 3.91642 16.7595 4.41193C16.3501 4.82138 15.7192 4.8915 15.1882 4.66052C15.1045 4.6241 15.02 4.58907 14.9348 4.55546C14.3963 4.34302 14 3.84744 14 3.2686Z"
                     stroke="currentColor"
-                    stroke-width="2"
+                    strokeWidth="2"
                   />
                   <path
                     d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z"
                     stroke="currentColor"
-                    stroke-width="2"
+                    strokeWidth="2"
                   />
                 </svg>
                 <span className="flex-1 ms-3 whitespace-nowrap text-primary-menu font-bold group-hover:text-white">
@@ -306,29 +302,6 @@ export function Sidebar() {
                 </span>
               </a>
             </li>
-            {/* <li>
-              <a
-                href="#"
-                className="flex items-center p-2 text-white rounded-lg dark:text-white  hover:bg-primary-menuSelecionado dark:hover:bg-primary-menuSelecionado group"
-              >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="group-hover:text-white text-primary-menu"
-                >
-                  <path
-                    d="M22.1836 11.8359L13.1273 2.78437L12.5203 2.17734C12.382 2.03994 12.1949 1.96283 12 1.96283C11.805 1.96283 11.618 2.03994 11.4797 2.17734L1.81639 11.8359C1.67467 11.9771 1.56266 12.1452 1.48698 12.3304C1.41131 12.5156 1.37349 12.714 1.37577 12.9141C1.38514 13.7391 2.07186 14.3977 2.89686 14.3977H3.89296V22.0312H20.107V14.3977H21.1242C21.525 14.3977 21.9023 14.2406 22.1859 13.957C22.3256 13.8178 22.4362 13.6523 22.5114 13.4701C22.5867 13.2878 22.625 13.0925 22.6242 12.8953C22.6242 12.4969 22.4672 12.1195 22.1836 11.8359ZM13.3125 20.3437H10.6875V15.5625H13.3125V20.3437ZM18.4195 12.7102V20.3437H14.8125V15C14.8125 14.482 14.393 14.0625 13.875 14.0625H10.125C9.60702 14.0625 9.18749 14.482 9.18749 15V20.3437H5.58046V12.7102H3.33046L12.0023 4.04531L12.5437 4.58672L20.6719 12.7102H18.4195Z"
-                    fill="currentColor"
-                  />
-                </svg>
-                <span className="flex-1 ms-3 whitespace-nowrap text-primary-menu font-bold group-hover:text-white">
-                  Teste
-                </span>
-              </a>
-            </li> */}
           </ul>
         </div>
       </aside>
