@@ -19,6 +19,8 @@ const config: Config = {
           bgHeader: "#2c2c2c",
           maisAcoes: "#6F8865",
           bloqueado: "#D4D4D4",
+          table: "#757575",
+          linetable: "#E0E0E0",
           filtro: {
             verde: "#6F8865",
             vinho: "7E6588",
