@@ -1,51 +1,53 @@
 "use client";
-import { useEffect, useState } from "react";
-import { LancamentoI } from "../utils/types/lancamento";
-import { LancamentosList } from "../components/Caixa/LancamentosList";
 
-export default function Caixa() {
-  const [lancamentos, setLancamentos] = useState<LancamentoI[]>([]);
+import { useEffect, useState } from "react";
+import { FuncionarioI } from "@/app/utils/types/funcionarios";
+import { FuncionarioList } from "@/app/components/Funcionarios/FuncionarioList";
+
+export default function Funcionarios() {
+  const [funcionarios, setFuncionarios] = useState<FuncionarioI[]>([]);
 
   useEffect(() => {
     async function buscaDados() {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_URL_API}/caixa`);
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_URL_API}/funcionarios`
+      );
       const dados = await response.json();
       console.log(dados);
-      setLancamentos(dados);
+      setFuncionarios(dados);
     }
     buscaDados();
   }, []);
 
-  const listaLancamentos = lancamentos.map((lancamento) => (
-    <LancamentosList data={lancamento} key={lancamento.id} />
+  const listaFuncionarios = funcionarios.map((funcionario) => (
+    <FuncionarioList data={funcionario} key={funcionario.id} />
   ));
 
   return (
-    <div className="bg-primary-bg">
+    <div className="bg-primary-bg m-3">
       <div className="m-3">
         <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
           <table className="w-full text-sm text-left rtl:text-right text-primary-table">
             <thead className="text-base text-primary-table  bg-white border-b-2 border-primary-linetable">
               <tr>
                 <th scope="col" className="px-6 py-3">
-                  Dia
+                  Código
                 </th>
                 <th scope="col" className="px-6 py-3">
-                  Descrição do Lançamento
+                  Nome
                 </th>
                 <th scope="col" className="px-6 py-3">
-                  Valor R$
+                  Função
                 </th>
                 <th scope="col" className="px-6 py-3">
-                  Origem
+                  Telefone
                 </th>
                 <th scope="col" className="px-6 py-3">
                   Ações
-                  {/* <span className="sr-only">Ações</span> */}
                 </th>
               </tr>
             </thead>
-            <tbody>{listaLancamentos}</tbody>
+            <tbody>{listaFuncionarios}</tbody>
           </table>
         </div>
       </div>

@@ -70,7 +70,7 @@ export function Sidebar() {
               </a>
             </li>
             <li>
-              <a
+              <Link
                 href="/Animais"
                 className="flex items-center p-2 text-white rounded-lg dark:text-white  hover:bg-primary-menuSelecionado dark:hover:bg-primary-menuSelecionado group"
               >
@@ -106,10 +106,10 @@ export function Sidebar() {
                 <span className="flex-1 ms-3 whitespace-nowrap text-primary-menu font-bold group-hover:text-white">
                   Animais
                 </span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/Suprimentos"
                 className="flex items-center p-2 text-white rounded-lg dark:text-white  hover:bg-primary-menuSelecionado dark:hover:bg-primary-menuSelecionado group"
               >
@@ -152,7 +152,7 @@ export function Sidebar() {
                 <span className="flex-1 ms-3 whitespace-nowrap text-primary-menu font-bold group-hover:text-white">
                   Suprimentos
                 </span>
-              </a>
+              </Link>
             </li>
             <li>
               <button
@@ -161,7 +161,6 @@ export function Sidebar() {
                 aria-controls="dropdown-example"
                 data-collapse-toggle="dropdown-example"
               >
-                {/* <img src="./People.svg" /> */}
                 <svg
                   width="24"
                   height="24"
@@ -228,25 +227,25 @@ export function Sidebar() {
               </button>
               <ul id="dropdown-example" className="hidden py-2 space-y-2">
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href="/Pessoas/Funcionarios"
                     className="flex items-center w-full p-2 text-primary-menu transition duration-75 rounded-lg pl-11 group hover:text-white hover:bg-primary-menuSelecionado"
                   >
                     Funcionários
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href="/Pessoas/Interessados"
                     className="flex items-center w-full p-2 text-primary-menu transition duration-75 rounded-lg pl-11 group hover:text-white  hover:bg-primary-menuSelecionado"
                   >
                     Interessados
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a
+              <Link
                 href="/Caixa"
                 className="flex items-center p-2 text-white rounded-lg dark:text-white  hover:bg-primary-menuSelecionado dark:hover:bg-primary-menuSelecionado group"
               >
@@ -271,10 +270,10 @@ export function Sidebar() {
                 <span className="flex-1 ms-3 whitespace-nowrap text-primary-menu font-bold group-hover:text-white">
                   Caixa
                 </span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="flex items-center p-2 text-white rounded-lg hover:bg-primary-menuSelecionado group"
               >
@@ -300,7 +299,7 @@ export function Sidebar() {
                 <span className="flex-1 ms-3 whitespace-nowrap text-primary-menu font-bold group-hover:text-white">
                   Configurações
                 </span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
