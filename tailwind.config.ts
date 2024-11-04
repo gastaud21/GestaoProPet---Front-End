@@ -32,6 +32,10 @@ const config: Config = {
             entrar: "#6F8865",
             checkbox: "#648188",
           },
+          caixa: {
+            Saida: "#FF4F23",
+            Entrada: "#23D3FF",
+          },
         },
       },
     },

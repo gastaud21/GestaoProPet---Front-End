@@ -1,43 +1,47 @@
 "use client";
+import { InteressadoList } from "@/app/components/Interessados/InteressadoList";
+import { InteressadoI } from "@/app/utils/types/interessados";
 import { useEffect, useState } from "react";
-import { LancamentoI } from "../utils/types/lancamento";
-import { LancamentosList } from "../components/Caixa/LancamentosList";
+// import { SuprimentosI } from "../utils/types/suprimentos";
+// import { ItemList } from "../components/Suprimentos/ItemList";
 
-export default function Caixa() {
-  const [lancamentos, setLancamentos] = useState<LancamentoI[]>([]);
+export default function Interessados() {
+  const [interessados, setInteressados] = useState<InteressadoI[]>([]);
 
   useEffect(() => {
     async function buscaDados() {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_URL_API}/caixa`);
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_URL_API}/interessados`
+      );
       const dados = await response.json();
       console.log(dados);
-      setLancamentos(dados);
+      setInteressados(dados);
     }
     buscaDados();
   }, []);
 
-  const listaLancamentos = lancamentos.map((lancamento) => (
-    <LancamentosList data={lancamento} key={lancamento.id} />
+  const listaInteressados = interessados.map((interessado) => (
+    <InteressadoList data={interessado} key={interessado.id} />
   ));
 
   return (
-    <div className="bg-primary-bg">
+    <div className="bg-primary-bg m-3">
       <div className="m-3">
         <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
           <table className="w-full text-sm text-left rtl:text-right text-primary-table">
             <thead className="text-base text-primary-table  bg-white border-b-2 border-primary-linetable">
               <tr>
                 <th scope="col" className="px-6 py-3">
-                  Dia
+                  Código
                 </th>
                 <th scope="col" className="px-6 py-3">
-                  Descrição do Lançamento
+                  Nome
                 </th>
                 <th scope="col" className="px-6 py-3">
-                  Valor R$
+                  Já nos adotou
                 </th>
                 <th scope="col" className="px-6 py-3">
-                  Origem
+                  Telefone
                 </th>
                 <th scope="col" className="px-6 py-3">
                   Ações
@@ -45,7 +49,7 @@ export default function Caixa() {
                 </th>
               </tr>
             </thead>
-            <tbody>{listaLancamentos}</tbody>
+            <tbody>{listaInteressados}</tbody>
           </table>
         </div>
       </div>
