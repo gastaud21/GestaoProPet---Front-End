@@ -29,6 +29,7 @@ const config: Config = {
           },
           botaoGG: "#648188",
           botaoGGHover: "#7598a1",
+          inputBlocked: "#d4d4d4",
           login: {
             entrar: "#6F8865",
             checkbox: "#648188",
