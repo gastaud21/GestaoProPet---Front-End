@@ -28,6 +28,7 @@ const config: Config = {
             musgo: "#887F66",
           },
           botaoGG: "#648188",
+          botaoGGHover: "#7598a1",
           login: {
             entrar: "#6F8865",
             checkbox: "#648188",
