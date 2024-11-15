@@ -47,8 +47,8 @@ export function Sidebar() {
           {/*h-full div acima */}
           <ul className="space-y-2 font-medium">
             <li>
-              <a
-                href="/Home"
+              <Link
+                href="/Dashboard"
                 className="flex items-center p-2 text-white rounded-lg dark:text-white  hover:bg-primary-menuSelecionado dark:hover:bg-primary-menuSelecionado group"
               >
                 <svg
@@ -67,7 +67,7 @@ export function Sidebar() {
                 <span className="flex-1 ms-3 whitespace-nowrap text-primary-menu font-bold group-hover:text-white">
                   Início
                 </span>
-              </a>
+              </Link>
             </li>
             <li>
               <Link

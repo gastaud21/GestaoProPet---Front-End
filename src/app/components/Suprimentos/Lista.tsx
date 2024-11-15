@@ -1,7 +1,6 @@
 export function Lista() {
   return (
     <>
-      return (
       <div className="bg-primary-bg m-3">
         <div className="m-3">
           <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -108,7 +107,6 @@ export function Lista() {
           </div>
         </div>
       </div>
-      );
     </>
   );
 }
