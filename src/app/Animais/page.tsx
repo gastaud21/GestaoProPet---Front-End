@@ -29,7 +29,7 @@ export default function Animais() {
         </div>
         <Link
           href="Animais/Cadastro"
-          className="bg-primary-botaoGG text-white hover:bg-primary-botaoGGHover focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 text-center"
+          className="flex items-center bg-primary-botaoGG text-white hover:bg-primary-botaoGGHover font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
         >
           Novo Animal
         </Link>

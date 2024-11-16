@@ -1,18 +1,17 @@
 "use client";
-import { useEffect, useState } from "react";
-import Link from "next/link";
+
+// import { useEffect, useState } from "react";
+// import { FuncionarioI } from "@/app/utils/types/funcionarios";
+// import { FuncionarioList } from "@/app/components/Funcionarios/FuncionarioList";
 import { ImagemMini } from "@/app/components/Suprimentos/Cadastro/ImagemMini";
+import Link from "next/link";
 
-export default function CadastroSuprimento() {
-  function pesquisa() {
-    return;
-  }
-
+export default function FuncionarioCadastro() {
   return (
     <div className="flex flex-col gap-4 p-7">
       <div className="flex gap-2 items-center">
         <Link href="/Suprimentos" className="text-primary-menu">
-          Suprimentos
+          Funcionários
         </Link>
         <svg
           width="8"
@@ -30,10 +29,10 @@ export default function CadastroSuprimento() {
           href="/Suprimentos/Cadastro"
           className="text-primary-menu font-bold"
         >
-          Edição de Suprimento
+          Edição de Funcionário
         </Link>
       </div>
-      <form action="" className="flex flex-col gap-4" onSubmit={pesquisa}>
+      <form action="" className="flex flex-col gap-4">
         <div className="flex flex-col gap-4 w-[961px] bg-white rounded-[32px] pt-[17px] pl-[64px] pb-[32px] pr-[33px] shadow-lg">
           <div className="flex text-black gap-3">
             <div className="h-auto max-w-full rounded-lg">
