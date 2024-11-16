@@ -10,7 +10,7 @@ export function Header() {
             className="h-8"
             alt="Flowbite Logo"
           /> */}
-          <img src="./Logo.svg" />
+          <img src="/Logo.svg" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
             GestãoProPet
           </span>
