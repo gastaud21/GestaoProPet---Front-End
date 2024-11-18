@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { SuprimentosI } from "../utils/types/suprimentos";
-import { ItemList } from "../components/Suprimentos/ItemList";
+import { ItemList } from "../components/_Suprimentos/ItemList";
 import Link from "next/link";
 // import { useClienteStore } from "@/context/cliente";
 

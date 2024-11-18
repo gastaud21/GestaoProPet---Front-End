@@ -38,7 +38,22 @@ const config: Config = {
             Saida: "#FF4F23",
             Entrada: "#23D3FF",
           },
+          MenuSelect: {
+            vermelho: "#886671",
+            amarelo: "#d29569",
+            azul: "#667088",
+          },
         },
+      },
+      boxShadow: {
+        Select: "0px 2px 4px 4px #00000040",
+      },
+      transform: {
+        selectRigth: "translate(64px, 114px)",
+      },
+      translate: {
+        XSelecionar: "64px",
+        YSelecionar: "114px",
       },
     },
   },

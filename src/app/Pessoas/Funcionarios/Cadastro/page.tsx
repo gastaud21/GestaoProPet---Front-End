@@ -3,7 +3,7 @@
 // import { useEffect, useState } from "react";
 // import { FuncionarioI } from "@/app/utils/types/funcionarios";
 // import { FuncionarioList } from "@/app/components/Funcionarios/FuncionarioList";
-import { ImagemMini } from "@/app/components/Suprimentos/Cadastro/ImagemMini";
+import { ImagemMini } from "../../../components/_Suprimentos/_Cadastro/ImagemMini";
 import Link from "next/link";
 
 export default function FuncionarioCadastro() {
@@ -293,10 +293,10 @@ export default function FuncionarioCadastro() {
               </button>
             </div>
             <div className="flex gap-1">
-              <ImagemMini />
-              <ImagemMini />
-              <ImagemMini />
-              <ImagemMini />
+              <ImagemMini caminho="Teste/imagemFake.png" />
+              <ImagemMini caminho="Teste/imagemFake.png" />
+              <ImagemMini caminho="Teste/imagemFake.png" />
+              <ImagemMini caminho="Teste/imagemFake.png" />
             </div>
           </div>
         </div>

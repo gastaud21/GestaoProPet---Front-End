@@ -1,5 +1,6 @@
 import { SuprimentosI } from "@/app/utils/types/suprimentos";
 import Link from "next/link";
+import Select from "../_Testes/Select";
 
 // Função para escolher o ícone de sexo
 // export const iconeSexo = (sexo: string) => {
@@ -23,8 +24,7 @@ export function ItemList({ data }: { data: SuprimentosI }) {
       </td>
       <td className="px-6 py-4">{data.categoria.nome}</td>
       <td className="px-6 py-4 text-right">
-        {/* <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a> */}
-        <button>
+        {/* <button>
           <svg
             width="24"
             height="24"
@@ -51,7 +51,8 @@ export function ItemList({ data }: { data: SuprimentosI }) {
               fill="currentColor"
             />
           </svg>
-        </button>
+        </button> */}
+        <Select idItem={data.id} />
       </td>
     </tr>
   );

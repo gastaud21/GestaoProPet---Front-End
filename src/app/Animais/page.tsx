@@ -1,7 +1,7 @@
 "use client";
 
 import { Just_Me_Again_Down_Here } from "next/font/google";
-import CardAnimal from "../components/Animais/CardAnimal";
+import CardAnimal from "../components/_Animais/CardAnimal";
 import Link from "next/link";
 
 const font = Just_Me_Again_Down_Here({

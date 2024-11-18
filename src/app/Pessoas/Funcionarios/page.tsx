@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { FuncionarioI } from "@/app/utils/types/funcionarios";
-import { FuncionarioList } from "@/app/components/Funcionarios/FuncionarioList";
+import { FuncionarioList } from "@/app/components/_Pessoas/_Funcionarios/FuncionarioList";
 import Link from "next/link";
 
 export default function Funcionarios() {

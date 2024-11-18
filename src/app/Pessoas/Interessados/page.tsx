@@ -1,5 +1,5 @@
 "use client";
-import { InteressadoList } from "@/app/components/Interessados/InteressadoList";
+import { InteressadoList } from "@/app/components/_Interessados/InteressadoList";
 import { InteressadoI } from "@/app/utils/types/interessados";
 import { useEffect, useState } from "react";
 // import { SuprimentosI } from "../utils/types/suprimentos";
