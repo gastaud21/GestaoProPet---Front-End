@@ -1,7 +1,7 @@
 "use client";
 
 import { Just_Me_Again_Down_Here } from "next/font/google";
-import { AnimalEdit } from "../components/Animais/Cadastro/AnimalEdit";
+import { AnimalEdit } from "../components/_Animais/_Cadastro/AnimalEdit";
 
 const font = Just_Me_Again_Down_Here({
   weight: ["400"],

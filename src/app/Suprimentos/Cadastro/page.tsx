@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ImagemMini } from "@/app/components/Suprimentos/Cadastro/ImagemMini";
+import { ImagemMini } from "../../components/_Suprimentos/_Cadastro/ImagemMini";
 
 export default function CadastroSuprimento() {
   function pesquisa() {

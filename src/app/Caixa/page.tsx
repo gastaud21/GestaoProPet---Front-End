@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { LancamentoI } from "../utils/types/lancamento";
-import { LancamentosList } from "../components/Caixa/LancamentosList";
+import { LancamentosList } from "../components/_Caixa/LancamentosList";
 
 export default function Caixa() {
   const [lancamentos, setLancamentos] = useState<LancamentoI[]>([]);
