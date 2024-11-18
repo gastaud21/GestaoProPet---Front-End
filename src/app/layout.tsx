@@ -3,7 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "./components/Header";
 import { Sidebar } from "./components/Sidebar";
-
+import Login from "./login/page";
+import {  useFuncionarioStore} from "@/context/funcionario";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -32,18 +33,26 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
+  const { cliente } = useFuncionarioStore()
   return (
     <html lang="pt'br">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {" "}
-        <div className="">
-          <Header />
-        </div>
-        <div className="flex">
-          <Sidebar />
-          {children}
+        <div>
+          < Login />
+
+
+          <div className="">
+            <Header />
+          </div>
+          <div className="flex">
+            <Sidebar />
+            {children}
+          </div>
         </div>
       </body>
     </html>

@@ -35,6 +35,7 @@ const config: Config = {
           caixa: {
             Saida: "#FF4F23",
             Entrada: "#23D3FF",
+            Textobutton: "#2C2C2C"
           },
         },
       },
