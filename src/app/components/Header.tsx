@@ -2,8 +2,8 @@
 
 export function Header() {
   return (
-    <nav className=" bg-primary-bgHeader">
-      <div className="flex  items-center justify-between  py-4 px-44 w-screen-[-webkit-fill-available]">
+    <nav className=" bg-primary-bgHeader w-[-webkit-fill-available]">
+      <div className="flex items-center justify-between  py-4 px-44 w-screen-[-webkit-fill-available]">
         <a href="" className="flex items-center space-x-3 rtl:space-x-reverse">
           {/* <img
             src="https://flowbite.com/docs/images/logo.svg"
