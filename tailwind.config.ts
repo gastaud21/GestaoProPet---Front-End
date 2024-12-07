@@ -66,6 +66,12 @@ const config: Config = {
         XSelecionar: "64px",
         YSelecionar: "114px",
       },
+      screens: {
+        telaPeq: "1114px",
+      },
+      boxShadowColor: {
+        celulaForm: "1px 1px 2.5px 2px rgba(0, 0, 0, 0.25)",
+      },
     },
   },
   plugins: [require("flowbite/plugin")],
