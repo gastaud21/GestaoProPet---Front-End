@@ -7,7 +7,7 @@ export function LancamentosList({ data }: { data: LancamentoI }) {
       <td className="px-6 py-4">{data.descricao}</td>
       {/* <td className="px-6 py-4">{data.valor}</td> */}
       <td
-        className={`px-6 py-4 ${
+        className={`px-6 py-4 font-bold ${
           data.isEntrada
             ? "text-primary-caixa-Entrada"
             : "text-primary-caixa-Saida"
