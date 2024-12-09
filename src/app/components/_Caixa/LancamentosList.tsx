@@ -1,4 +1,5 @@
 import { LancamentoI } from "@/app/utils/types/lancamento";
+import { maskDinheiro } from "../_Mascaras/masks";
 
 export function LancamentosList({ data }: { data: LancamentoI }) {
   return (
@@ -13,7 +14,7 @@ export function LancamentosList({ data }: { data: LancamentoI }) {
             : "text-primary-caixa-Saida"
         }`}
       >
-        R$ {data.valor}
+        {maskDinheiro(String(data.valor))}
       </td>
       <td className="px-6 py-4">{data.origem}</td>
       <td className="px-6 py-4 text-right">
