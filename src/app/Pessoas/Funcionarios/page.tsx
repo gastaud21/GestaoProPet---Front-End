@@ -64,7 +64,6 @@ export default function Funcionarios() {
                     fill="#958B8B"
                   />
                 </svg>
-                <span className="sr-only">Search</span>
               </button>
             </div>
             {/* final do terminar */}

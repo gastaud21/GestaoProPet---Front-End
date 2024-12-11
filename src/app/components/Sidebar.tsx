@@ -14,7 +14,7 @@ export function Sidebar() {
     //   <Link href={""}>Caixa</Link>
     //   <Link href={""}>Configurações</Link>
     // </aside>
-    <div className="top-0 left-0 z-40 w-64 transition-transform -translate-x-full sm:translate-x-0 h-[calc(100vh-106px)] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
+    <div className="top-0 left-0 w-64 transition-transform -translate-x-full sm:translate-x-0 h-[calc(100vh-106px)] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
       {/* <button
         data-drawer-target="sidebar-multi-level-sidebar"
         data-drawer-toggle="sidebar-multi-level-sidebar"

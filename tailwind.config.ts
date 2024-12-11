@@ -5,6 +5,7 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/flowbite/**/*.js",
   ],
   theme: {
     extend: {
@@ -43,6 +44,16 @@ const config: Config = {
             amarelo: "#d29569",
             azul: "#667088",
           },
+          cadastroInteressado: {
+            radiobutton: "#667088",
+          },
+          SpeedDial: {
+            salvar: "#6F8865",
+            addOutro: "#667088",
+            voltar: "#D29569",
+            excluir: "#886671",
+            normal: "#4caf50",
+          },
         },
       },
       boxShadow: {
@@ -55,8 +66,14 @@ const config: Config = {
         XSelecionar: "64px",
         YSelecionar: "114px",
       },
+      screens: {
+        telaPeq: "1114px",
+      },
+      boxShadowColor: {
+        celulaForm: "1px 1px 2.5px 2px rgba(0, 0, 0, 0.25)",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };
 export default config;
