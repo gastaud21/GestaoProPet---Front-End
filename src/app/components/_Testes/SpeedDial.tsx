@@ -3,7 +3,7 @@ export function SpeedDial() {
     <div data-dial-init className="fixed end-6 bottom-6 group">
       <div
         id="speed-dial-menu-hover"
-        className="flex flex-col items-center hidden mb-4 space-y-2"
+        className="items-center hidden mb-4 space-y-2"
       >
         <button
           type="button"
