@@ -140,14 +140,16 @@ export default function InteressadoCadastro() {
                       <option selected defaultValue={"Antipulgas"}>
                         Selecione
                       </option>
-                      <option value="Casado">Casado(a)</option>
+                      <option value="Nao_Informado">Não Informado</option>
                       <option value="Solteiro">Solateiro(a)</option>
+                      <option value="Casado">Casado(a)</option>
                       <option value="Divorciado">Divorciado(a)</option>
+                      <option value="Viuvo">Viuvo(a)</option>
                     </select>
                   </div>
                   <div>
                     <label htmlFor="" className="font-bold">
-                      Data de Nascimento aproximada
+                      Data de Nascimento
                     </label>
                     {/* <input
                     type="text"
