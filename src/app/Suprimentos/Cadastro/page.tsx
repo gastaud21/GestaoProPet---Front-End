@@ -4,6 +4,8 @@ import Link from "next/link";
 import { ImagemMini } from "../../components/_Suprimentos/_Cadastro/ImagemMini";
 
 export default function CadastroSuprimento() {
+  const [fileName, setFileName] = useState<string | null>(null);
+
   function pesquisa() {
     return;
   }
@@ -263,41 +265,54 @@ export default function CadastroSuprimento() {
               </div>
             </div>
           </div>
-          <div className="text-black flex gap-5">
-            {/* div pra botao de foto mais fotos */}
-            <div className="flex flex-col">
+          <div className="text-black flex justify-between items-end gap-[10rem]">
+            <div className="flex flex-col gap-1 w-fit justify-center items-center">
               <p className="font-bold">Adicionar Fotos</p>
-              <button>
-                <svg
-                  width="90"
-                  height="90"
-                  viewBox="0 0 90 90"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+              <div className="py-2 flex justify-center rounded-[8px] shadow-[1px_1px_2.5px_2px_#00000040]">
+                <input
+                  type="file"
+                  id="fileInput"
+                  className="hidden"
+                  placeholder="none"
+                  // {...register("fileName")}
+                />
+                {/* Botão estilizado */}
+                <label
+                  htmlFor="fileInput"
+                  className="cursor-pointer  text-white py-2 rounded-md  transition"
                 >
-                  <path
-                    d="M15 18.75H63.75V45H71.25V18.75C71.25 14.6137 67.8862 11.25 63.75 11.25H15C10.8637 11.25 7.5 14.6137 7.5 18.75V63.75C7.5 67.8862 10.8637 71.25 15 71.25H45V63.75H15V18.75Z"
-                    fill="black"
-                    fillOpacity="0.8"
-                  />
-                  <path
-                    d="M30 41.25L18.75 56.25H60L45 33.75L33.75 48.75L30 41.25Z"
-                    fill="black"
-                    fillOpacity="0.8"
-                  />
-                  <path
-                    d="M71.25 52.5H63.75V63.75H52.5V71.25H63.75V82.5H71.25V71.25H82.5V63.75H71.25V52.5Z"
-                    fill="black"
-                    fillOpacity="0.8"
-                  />
-                </svg>
-              </button>
+                  {fileName ? `Arquivo: ${fileName}` : ""}
+                  <svg
+                    width="186"
+                    height="90"
+                    viewBox="0 0 90 90"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 18.75H63.75V45H71.25V18.75C71.25 14.6137 67.8862 11.25 63.75 11.25H15C10.8637 11.25 7.5 14.6137 7.5 18.75V63.75C7.5 67.8862 10.8637 71.25 15 71.25H45V63.75H15V18.75Z"
+                      fill="black"
+                      fillOpacity="0.8"
+                    />
+                    <path
+                      d="M30 41.25L18.75 56.25H60L45 33.75L33.75 48.75L30 41.25Z"
+                      fill="black"
+                      fillOpacity="0.8"
+                    />
+                    <path
+                      d="M71.25 52.5H63.75V63.75H52.5V71.25H63.75V82.5H71.25V71.25H82.5V63.75H71.25V52.5Z"
+                      fill="black"
+                      fillOpacity="0.8"
+                    />
+                  </svg>
+                </label>
+              </div>
             </div>
-            <div className="flex gap-1">
-              <ImagemMini />
-              <ImagemMini />
-              <ImagemMini />
-              <ImagemMini />
+            <div className="flex justify-between w-[calc(100%-126px)]">
+              <ImagemMini caminho="Teste/imagemFake.png" />
+              <ImagemMini caminho="Teste/imagemFake.png" />
+              <ImagemMini caminho="Teste/imagemFake.png" />
+              <ImagemMini caminho="Teste/imagemFake.png" />
             </div>
           </div>
         </div>

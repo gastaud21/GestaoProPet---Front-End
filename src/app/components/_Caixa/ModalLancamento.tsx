@@ -8,22 +8,20 @@ const saidaVazia: LancamentoI = {
   dia: 0,
   mes: "",
   ano: 0,
-  tipo: "",
+  tipo: "Saida",
   descricao: "",
   valor: 0,
   origem: "",
-  isEntrada: false,
 };
 const entradaVazia: LancamentoI = {
   id: 0,
   dia: 0,
   mes: "",
   ano: 0,
-  tipo: "",
+  tipo: "Entrada",
   descricao: "",
   valor: 0,
   origem: "",
-  isEntrada: true,
 };
 
 export function ModalLancamento({ data }: { data: LancamentoI }) {
@@ -62,22 +60,22 @@ export function ModalLancamento({ data }: { data: LancamentoI }) {
         <div className={`relative bg-white rounded-lg shadow dark:bg-gray-700`}>
           <div
             className={`flex items-center justify-between p-4 md:p-5 border-b rounded-t ${
-              data.isEntrada
+              data.tipo == "Entrada"
                 ? "bg-primary-caixa-Entrada"
                 : "bg-primary-caixa-Saida"
             }`}
           >
             <h3
               className={`text-xl font-semibold ${
-                data.isEntrada ? "text-[#2C2C2C]" : "text-white"
+                data.tipo == "Entrada" ? "text-[#2C2C2C]" : "text-white"
               }`}
             >
-              {data.isEntrada ? "Entrada" : "Saída"}
+              {data.tipo == "Entrada" ? "Entrada" : "Saída"}
             </h3>
             <button
               type="button"
               className={`${
-                data.isEntrada
+                data.tipo == "Entrada"
                   ? "text-[#2C2C2C] hover:bg-[#2C2C2C] hover:text-primary-caixa-Entrada"
                   : "text-white hover:bg-white hover:text-primary-caixa-Saida"
               } bg-transparent  rounded-[16px] text-sm w-8 h-8 ms-auto inline-flex justify-center items-center`}

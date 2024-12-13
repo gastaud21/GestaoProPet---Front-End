@@ -7,11 +7,10 @@ export function SelectMes() {
         </label>
         <select
           id="Categoria"
+          defaultValue={"Dezembro"}
           className="text-black rounded-[8px] border-none w-[163px] h-[37px] shadow-[1px_1px_2.5px_2px_#00000040] flex items-center justify-center"
         >
-          <option selected defaultValue={"Selecione"}>
-            Selecione
-          </option>
+          <option>Selecione</option>
           <option value="Janeiro">Janeiro</option>
           <option value="Fevereiro">Fevereiro</option>
           <option value="Marco">Marco</option>
@@ -23,7 +22,9 @@ export function SelectMes() {
           <option value="Setembro">Setembro</option>
           <option value="Outubro">Outubro</option>
           <option value="Novembro">Novembro</option>
-          <option value="Dezembro">Dezembro</option>
+          <option value="Dezembro" selected>
+            Dezembro
+          </option>
         </select>
       </div>
     </div>

@@ -3,13 +3,6 @@ import { useEffect, useState } from "react";
 import { SuprimentosI } from "../utils/types/suprimentos";
 import { ItemList } from "../components/_Suprimentos/ItemList";
 import Link from "next/link";
-// import { useClienteStore } from "@/context/cliente";
-
-// type Inputs = {
-//   email: string;
-//   senha: string;
-//   manter: boolean;
-// };
 
 export default function Suprimentos() {
   const [suprimentos, setSuprimentos] = useState<SuprimentosI[]>([]);
@@ -20,7 +13,6 @@ export default function Suprimentos() {
         `${process.env.NEXT_PUBLIC_URL_API}/suprimentos`
       );
       const dados = await response.json();
-      console.log(dados);
       setSuprimentos(dados);
     }
     buscaDados();

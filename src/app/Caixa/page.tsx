@@ -16,7 +16,6 @@ const saidaVazia: LancamentoI = {
   descricao: "",
   valor: 0,
   origem: "",
-  isEntrada: false,
 };
 const entradaVazia: LancamentoI = {
   id: 0,
@@ -27,7 +26,6 @@ const entradaVazia: LancamentoI = {
   descricao: "",
   valor: 0,
   origem: "",
-  isEntrada: true,
 };
 
 export default function Caixa() {
@@ -39,8 +37,20 @@ export default function Caixa() {
     async function buscaDados() {
       const response = await fetch(`${process.env.NEXT_PUBLIC_URL_API}/caixa`);
       const dados = await response.json();
-      console.log(dados);
-      setLancamentos(dados);
+      if (dados) {
+        const dadosTratados: [] = dados.map((movimentacao: any) => ({
+          key: parseInt(movimentacao.id),
+          dia: parseInt(movimentacao.dia), // Converte o 'dia' de string para number
+          mes: movimentacao.mes, // Mantém 'mes' como string
+          ano: parseInt(movimentacao.ano), // Converte 'ano' de string para number
+          tipo: movimentacao.tipo, // Mantém 'tipo' como string
+          valor: parseFloat(movimentacao.valor), // Converte 'valor' de string para number
+          origem: movimentacao.origem, // Mantém 'origem' como string
+          descricao: movimentacao.descricao,
+        }));
+
+        setLancamentos(dadosTratados);
+      }
     }
     buscaDados();
   }, []);
@@ -50,16 +60,14 @@ export default function Caixa() {
   ));
 
   function dataModalLancamento(lancamento: LancamentoI) {
+    console.log(lancamento);
+
     if (lancamento == saidaVazia) {
       setLancamentoModal(lancamento);
     }
     if (lancamento == entradaVazia) {
       setLancamentoModal(lancamento);
     }
-  }
-
-  function darLog(x: string) {
-    console.log(x);
   }
 
   return (

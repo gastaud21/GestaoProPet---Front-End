@@ -7,5 +7,5 @@ export interface LancamentoI {
   descricao: string;
   valor: number;
   origem: string;
-  isEntrada: boolean;
+  // isEntrada: boolean;
 }

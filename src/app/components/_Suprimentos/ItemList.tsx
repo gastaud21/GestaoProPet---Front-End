@@ -19,12 +19,10 @@ export function ItemList({ data }: { data: SuprimentosI }) {
     <tr className="bg-white border-b border-primary-linetable hover:bg-gray-400 hover:text-white">
       <td className="px-6 py-4">{data.id}</td>
       <td className="px-6 py-4">{data.item}</td>
-      <td className="px-6 py-4">
-        {data.estoque} {data.unidade}
-      </td>
-      <td className="px-6 py-4">{data.categoria.nome}</td>
+      <td className="px-6 py-4">{data.estoque} Un</td>
+      <td className="px-6 py-4">{data.categoriaId}</td>
       <td className="px-6 py-4 text-right">
-        {/* <button>
+        <button onClick={() => console.log(data)}>
           <svg
             width="24"
             height="24"
@@ -51,8 +49,8 @@ export function ItemList({ data }: { data: SuprimentosI }) {
               fill="currentColor"
             />
           </svg>
-        </button> */}
-        <Select idItem={data.id} />
+        </button>
+        {/* <Select idItem={data.id} /> */}
       </td>
     </tr>
   );

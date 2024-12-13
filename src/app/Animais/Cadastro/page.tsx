@@ -5,7 +5,6 @@ import { toast } from "sonner";
 import Cookies from "js-cookie";
 import { Just_Me_Again_Down_Here } from "next/font/google";
 import { useState, useEffect } from "react";
-import { maskCPF, maskTel } from "@/app/components/_Mascaras/masks";
 import Link from "next/link";
 import { ImagemMini } from "@/app/components/_Suprimentos/_Cadastro/ImagemMini";
 import { Controller, useForm } from "react-hook-form";
@@ -237,8 +236,8 @@ export default function CadastroAnimal() {
                   </label>
                   <select
                     id="Castrado"
-                    defaultValue={"selecione"}
-                    {...register("ehcastrado")}
+                    defaultValue={"Verificar"}
+                    {...register("castracao")}
                     className="rounded-[8px] w-[-webkit-fill-available] border-none h-[37px] shadow-[1px_1px_2.5px_2px_#00000040] flex items-center justify-center"
                   >
                     <option value="selecione" selected>
